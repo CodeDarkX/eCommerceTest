@@ -44,4 +44,41 @@ public class p03_homePage {
         WebElement slider2 = Hooks.driver.findElement(By.xpath("//*[@id=\"nivo-slider\"]/a[2]"));
         return slider2;
     }
+    public WebElement facebookNetwork(){
+        WebElement facebook = Hooks.driver.findElement(By.xpath("/html/body/div[6]/div[4]/div[1]/div[4]/div[1]/ul/li[1]/a"));
+        return facebook;
+    }
+    public WebElement twitterNetwork(){
+        WebElement twitter = Hooks.driver.findElement(By.xpath("/html/body/div[6]/div[4]/div[1]/div[4]/div[1]/ul/li[2]/a"));
+        return twitter;
+    }
+    public WebElement newsNetwork(){
+        WebElement news = Hooks.driver.findElement(By.xpath("/html/body/div[6]/div[4]/div[1]/div[4]/div[1]/ul/li[3]/a"));
+        return news;
+    }
+    public WebElement youtubeNetwork(){
+        WebElement youtube = Hooks.driver.findElement(By.xpath("/html/body/div[6]/div[4]/div[1]/div[4]/div[1]/ul/li[4]/a"));
+        return youtube;
+    }
+    public WebElement htcWishlist(){
+        WebElement htcWishlist = Hooks.driver.findElement(By.xpath("/html/body/div[6]/div[3]/div/div/div/div/div[4]/div[2]/div[3]/div/div[2]/div[3]/div[2]/button[3]"));
+        return htcWishlist;
+    }
+    public WebElement closeWishList(){
+        WebElement closeWishList = Hooks.driver.findElement(By.xpath("//*[@id=\"bar-notification\"]/div/span"));
+        return closeWishList;
+    }
+    public WebElement wishListMsg(){
+        WebElement wishListMsg =Hooks.driver.findElement(By.xpath("//*[@id=\"bar-notification\"]/div"));
+        return wishListMsg;
+    }
+    public WebElement wishlistTab(){
+        WebElement wishlistTab =Hooks.driver.findElement(By.xpath("/html/body/div[6]/div[1]/div[1]/div[2]/div[1]/ul/li[3]/a/span[1]"));
+        return wishlistTab;
+    }
+    public WebElement quantity(){
+        WebElement quantity = Hooks.driver.findElement(By.xpath("/html/body/div[6]/div[3]/div/div/div/div[2]/div[1]/form/div[1]/table/tbody/tr/td[6]/input"));
+
+        return quantity;
+    }
 }
