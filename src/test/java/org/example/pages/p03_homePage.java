@@ -36,4 +36,12 @@ public class p03_homePage {
         List<WebElement> categoryList = Hooks.driver.findElements(By.xpath("/html/body/div[6]/div[2]/ul[1]/li"));
         return categoryList;
     }
+    public WebElement slider1(){
+        WebElement slider1 = Hooks.driver.findElement(By.xpath("//*[@id=\"nivo-slider\"]/a[1]"));
+        return slider1;
+    }
+    public WebElement slider2(){
+        WebElement slider2 = Hooks.driver.findElement(By.xpath("//*[@id=\"nivo-slider\"]/a[2]"));
+        return slider2;
+    }
 }
