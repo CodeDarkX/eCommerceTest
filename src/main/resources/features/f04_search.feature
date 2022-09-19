@@ -1,9 +1,8 @@
 @smoke
   Feature: F04 | Search test
     Scenario Outline: user could search using product name
-      Given User searched for an item from the homepage
-      When User search for "<items>"
-      Then the search results are relevant
+      Given User searched for "<items>" from the homepage
+      Then the search results for "<items>" are relevant
 
       Examples:
         |items|
@@ -12,9 +11,8 @@
         |nike|
 
     Scenario Outline: user could search using product name
-      Given User searched for an item from the homepage
-      When User search for "<sku>"
-      Then the search result is relevant
+      Given User searched for items using "<sku>" from the homepage
+      Then the search result using "<sku>" is relevant
 
       Examples:
         |sku|
